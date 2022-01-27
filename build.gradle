@@ -14,7 +14,28 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	implementation 'org.hibernate:hibernate-core:5.6.1.Final'
+	implementation 'junit:junit:4.13.1'
+	implementation 'org.jetbrains:annotations:20.1.0'
+	implementation 'com.sun.jersey:jersey-json:1.17'
+	implementation 'org.modelmapper:modelmapper:2.4.4'
+
+	implementation 'com.sun.jersey:jersey-json:1.4'
+	implementation 'com.sun.jersey:jersey-server:1.4'
+
+	runtimeOnly 'org.postgresql:postgresql:42.3.1'
+
+	runtimeOnly 'org.springframework.boot:spring-boot-devtools:2.4.3'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.4.3'
+
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'com.h2database:h2:1.4.200'
 }
 
 tasks.named('test') {
